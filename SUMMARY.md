@@ -8,5 +8,5 @@
 * [Refactor Controller Logic to Services](05_refactor_controller_logic_to_services.md)
 * [Dependency Injection in ES6](06_dependency_injection_in_es6.md)
 * [Initialize Components with Lifecycle Hooks](07_initialize_components_with_lifecycle_hooks.md)
-* Connected and Presentational Components
+* [Connected and Presentational Components](08_connected_and_presentational_components.md)
 
