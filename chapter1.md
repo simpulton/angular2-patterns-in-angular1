@@ -1,3 +1,3 @@
-# First Chapter
+# Use ES6 for Classes and Modules
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+Because Angular 2 is built on top of web standards, we get twice the power with half the framework. 
