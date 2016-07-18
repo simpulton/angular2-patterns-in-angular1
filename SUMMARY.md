@@ -11,5 +11,5 @@
 * [Connected and Presentational Components](08_connected_and_presentational_components.md)
 * [Create Lightweight Controllers by Binding to Models](09_create_lightweight_controllers_by_binding_to_model.md)
 * [Isolating State Mutations in Angular Components](10_isolating_state_mutations_in_angular_components.md)
-* Communicate State Changes with an Event Bus
+* [Communicate State Changes with an Event Bus](11_communicate_state_changes_with_an_event_bus.md)
 
