@@ -37,7 +37,7 @@ class CategoriesModel {
   }
 
   getCategories() {
-    return this.$q.when(this.categories); // now we can use this.$q
+    return this.$q.when(this.categories); // now we can use $q
   }
 }
 
