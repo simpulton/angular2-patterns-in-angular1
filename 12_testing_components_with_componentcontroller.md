@@ -1,0 +1,2 @@
+# Testing Components with $componentController
+
