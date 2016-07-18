@@ -32,3 +32,53 @@ export class HomeComponent implements OnInit {
 }
 ```
 
+```javascript
+import template from './categories.html';
+import './categories.styl';
+
+const categoriesComponent = {
+  template
+};
+
+export default categoriesComponent;
+```
+
+```javascript
+class CategoriesController {
+  constructor(CategoriesModel) {
+    'ngInject';
+
+    this.CategoriesModel = CategoriesModel;
+  }
+
+  $onInit() {
+    this.CategoriesModel.getCategories()
+      .then(result => this.categories = result);
+  }
+
+  onCategorySelected(category) {
+    this.CategoriesModel.setCurrentCategory(category);
+  }
+
+  isCurrentCategory(category) {
+    return this.CategoriesModel.getCurrentCategory() &&
+      this.CategoriesModel.getCurrentCategory().id === category.id;
+  }
+}
+
+export default CategoriesController;
+```
+
+```javascript
+import template from './categories.html';
+import controller from './categories.controller';
+import './categories.styl';
+
+const categoriesComponent = {
+  template,
+  controller,
+  controllerAs: 'categoriesListCtrl'
+};
+
+export default categoriesComponent;
+```
