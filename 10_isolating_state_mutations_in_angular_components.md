@@ -19,3 +19,47 @@ let saveBookmarkComponent = {
 
 export default saveBookmarkComponent;
 ```
+
+```html
+<div class="save-bookmark">
+	<form ng-submit="saveBookmarkCtrl.save({bookmark:saveBookmarkCtrl.bookmark})" >
+		<div class="form-group">
+			<label>Bookmark Title</label>
+			<input type="text" ng-model="saveBookmarkCtrl.bookmark.title">
+		</div>
+		<div class="form-group">
+			<label>Bookmark URL</label>
+			<input type="text" ng-model="saveBookmarkCtrl.bookmark.url">
+		</div>
+		<button type="submit">Save</button>
+		<button type="button" ng-click="saveBookmarkCtrl.cancel()">Cancel</button>
+	</form>
+</div>
+```
+
+```javascript
+class SaveController {
+  $onChanges() {
+    this.editedBookmark = Object.assign({}, this.bookmark);
+  }
+}
+
+export default SaveController;
+```
+
+```html
+<div class="save-bookmark">
+	<form ng-submit="saveBookmarkCtrl.save({bookmark:saveBookmarkCtrl.editedBookmark})" >
+		<div class="form-group">
+			<label>Bookmark Title</label>
+			<input type="text" ng-model="saveBookmarkCtrl.editedBookmark.title">
+		</div>
+		<div class="form-group">
+			<label>Bookmark URL</label>
+			<input type="text" ng-model="saveBookmarkCtrl.editedBookmark.url">
+		</div>
+		<button type="submit">Save</button>
+		<button type="button" ng-click="saveBookmarkCtrl.cancel()">Cancel</button>
+	</form>
+</div>
+```
