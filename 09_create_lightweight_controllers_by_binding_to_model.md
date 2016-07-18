@@ -17,3 +17,17 @@ class BookmarksController {
 
 export default BookmarksController;
 ```
+
+```html
+<div class="bookmarks">
+	<div ng-repeat="bookmark in bookmarksListCtrl.bookmarks 
+    | filter:{category:bookmarksListCtrl.getCurrentCategory().name}">
+		<button type="button" class="close">&times;</button>
+		<button type="button" class="btn btn-link">
+			<span class="glyphicon glyphicon-pencil"></span>
+		</button>
+		<a href="{{bookmark.url}}" target="_blank">{{bookmark.title}}</a>
+	</div>
+</div>
+```
+
