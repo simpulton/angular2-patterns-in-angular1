@@ -4,7 +4,7 @@ Dependency injection in an Angular application using ES6 happens at the construc
 
 ```javascript
 class CategoriesModel {
-  constructor($q) {
+  constructor($q) { // $q is scope to the constructor only
     this.categories = [
       {"id": 0, "name": "Development"},
       {"id": 1, "name": "Design"},
@@ -25,9 +25,9 @@ export default CategoriesModel;
 ```javascript
 class CategoriesModel {
   constructor($q) {
-    'ngInject';
+    'ngInject'; // ng-annotate ftw
 
-    this.$q = $q;
+    this.$q = $q; // constructor assignment
     this.categories = [
       {"id": 0, "name": "Development"},
       {"id": 1, "name": "Design"},
@@ -37,7 +37,7 @@ class CategoriesModel {
   }
 
   getCategories() {
-    return this.$q.when(this.categories);
+    return this.$q.when(this.categories); // now we can use this.$q
   }
 }
 
