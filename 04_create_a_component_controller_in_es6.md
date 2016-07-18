@@ -12,6 +12,9 @@ import {MessageService} from '../shared';
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css']
 })
+```
+
+```javascript
 export class HomeComponent implements OnInit {
   title: string = 'Home Page';
   body:  string = 'This is the about home body';
@@ -28,3 +31,4 @@ export class HomeComponent implements OnInit {
   }
 }
 ```
+
