@@ -9,5 +9,5 @@
 * [Dependency Injection in ES6](06_dependency_injection_in_es6.md)
 * [Initialize Components with Lifecycle Hooks](07_initialize_components_with_lifecycle_hooks.md)
 * [Connected and Presentational Components](08_connected_and_presentational_components.md)
-* Create Lightweight Controllers by Binding to Models
+* [Create Lightweight Controllers by Binding to Models](09_create_lightweight_controllers_by_binding_to_model.md)
 
