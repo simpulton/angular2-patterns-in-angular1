@@ -4,12 +4,28 @@ The most stable component we can have is a component with no logic in it whatsoe
 
 ```html
 <ul class="nav nav-sidebar">
-	<li class="category-item"
-		ng-repeat="category in categoriesListCtrl.categories">
+	<li ng-repeat="category in categoriesListCtrl.categories">
 		<category-item
 			category="category"
 			selected="categoriesListCtrl.onCategorySelected(category)">
 		</category-item>
 	</li>
 </ul>
+```
+
+```javascript
+class CategoriesController {
+  constructor(CategoriesModel) {
+    'ngInject';
+
+    this.CategoriesModel = CategoriesModel;
+  }
+
+  onCategorySelected(category) {
+    console.log('CATEGORY SELECTED', category);
+  }
+}
+
+export default CategoriesController;
+
 ```
