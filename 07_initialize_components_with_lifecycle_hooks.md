@@ -32,3 +32,15 @@ class CategoriesController {
 
 export default CategoriesController;
 ```
+
+```javascript
+export class HomeComponent implements OnInit {
+  message: string;
+
+  constructor(private messageService: MessageService) { }
+
+  ngOnInit() {
+    this.message = this.messageService.getMessage();
+  }
+}
+```
