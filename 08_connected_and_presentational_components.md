@@ -17,6 +17,7 @@ let categoryItemComponent = {
 
 export default categoryItemComponent;
 ```
+
 ```html
 <div class="categoryItem"
 	ng-click="categoryItemCtrl.selected({category:categoryItemCtrl.category})">
