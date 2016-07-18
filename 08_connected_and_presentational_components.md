@@ -17,6 +17,12 @@ let categoryItemComponent = {
 
 export default categoryItemComponent;
 ```
+```html
+<div class="categoryItem"
+	ng-click="categoryItemCtrl.selected({category:categoryItemCtrl.category})">
+	{{categoryItemCtrl.category.name}}
+</div>
+```
 
 ```html
 <ul class="nav nav-sidebar">
