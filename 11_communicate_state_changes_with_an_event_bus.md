@@ -29,7 +29,6 @@ To be clear, it is a really bad idea to use **$rootScope** as a global storage d
 
 To listen our **onCurrentCategoryUpdated** event, we will inject **$scope** into our our **BookmarksController** and then use **$scope.$on** to set up our event handler. Notice that we are using **.bind(this)** because lexical scope jumps the tracks here as well.
 
-
 ```javascript
 class BookmarksController {
   constructor($scope, CategoriesModel, BookmarksModel) {
