@@ -63,3 +63,27 @@ class CategoriesController {
 
 export default CategoriesController;
 ```
+
+With that example in mind, I would like to pose a question. How would a person test our category item component below?
+
+```javascript
+import template from './category-item.html';
+import './category-item.styl';
+
+let categoryItemComponent = {
+  bindings: {
+    category: '<',
+    selected: '&'
+  },
+  template,
+  controllerAs: 'categoryItemCtrl'
+};
+
+export default categoryItemComponent;
+```
+
+A better question could be, **what** would they test? What unit of logic presents itself for assertion? With almost complete certainty, we can know that the only way for this component to break is for Angular to break. We have not only created a very stable component but dramatically reduced our testable surface in the process.
+
+The goal is to create a few presentational components that are responsible consuming data from our services and then using that data to coordinate the layout of our connected components. We want to have as few presentational components as possible while creating as many connected components as we can.
+
+
