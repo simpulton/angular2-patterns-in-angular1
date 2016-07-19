@@ -25,7 +25,9 @@ class CategoriesModel {
 export default CategoriesModel;
 ```
 
-To be clear, it is a really bad idea to use **$rootScope** as a global storage device and the reason that we have services. But there is one thing that **$rootScope** does better than anything else and that is broadcast events to the application. 
+To be clear, it is a really bad idea to use **$rootScope** as a global storage device as we have services to do that for us. But there is one thing that **$rootScope** does better than anything else and that is to reliably broadcast events to our application. 
+
+To listen our **onCurrentCategoryUpdated** event, we will inject **$scope** into our our **BookmarksController** and then use **$scope.$on** to set up our event handler. Notice that we are using **.bind(this)** because lexical scope jumps the tracks here as well.
 
 
 ```javascript
