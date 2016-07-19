@@ -24,7 +24,7 @@ In order for our **AppComponent** to to be instantiated in our application, we n
 </body>
 ```
 
-
+We can approximate this same pattern by first creating an **app** module that we bootstrap with with **ng-app**. More importantly, we keep all of our Angular code wrapped in a single, top level **app** component which we have created using **.component('app', appComponent)**. 
 
 ```javascript
 import angular from 'angular';
