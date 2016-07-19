@@ -2,7 +2,7 @@
 
 The atomic building block of an Angular 2 application is the component. 
 
-
+![](http://onehungrymind-45fd.kxcdn.com/books/angular2-subcomponents.png)
 
 
 ```javascript
