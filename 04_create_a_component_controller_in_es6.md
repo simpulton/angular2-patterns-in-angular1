@@ -1,6 +1,6 @@
 # Create a Component Controller in ES6
 
-The simplest version of an Angular 2 component is just an HTML template and a selector that allows us to attach our component to the DOM.
+The simplest version of an Angular 2 component is just an HTML template and a selector that allows us to attach our component to the DOM. As an organizational mechanism, this is a great approach but eventually we will need to attach some presentational logic to some of our components. This is pretty easy to do in Angular 2 because all of our components require an ES6 class to decorate. In fact, our ES6 class may hold nothing at all but it is always there.
 
 ```javascript
 import {Component, OnInit} from '@angular/core';
@@ -8,11 +8,14 @@ import {MessageService} from '../shared';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-home',
+  selector: 'home',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css']
 })
+export class HomeComponent {}
 ```
+
+And when we need to add functionality, we simply augment our existing class to do what we need.
 
 ```javascript
 export class HomeComponent implements OnInit {
@@ -32,6 +35,8 @@ export class HomeComponent implements OnInit {
 }
 ```
 
+In Angular 1, the wiring is a bit different but we are still staying true to the theme that the steps are almost identical. In our component definition object below, we have a simple component that currently only has a template. It is worth noting that in Angular 2, we can explicitly define styles on our component but the best we can do in Angular 1 is to implicitly "attach" them to our component by importing our styles when we define the component. 
+
 ```javascript
 import template from './categories.html';
 import './categories.styl';
@@ -42,6 +47,8 @@ const categoriesComponent = {
 
 export default categoriesComponent;
 ```
+
+To add a controller to our component, we will first create our **CategoriesController** which is just an ES6 class. We will get into specific details of what is happening in this class in later sections but for now, just make note of how close it compares to the Angular 2 component class above.
 
 ```javascript
 class CategoriesController {
@@ -68,6 +75,9 @@ class CategoriesController {
 
 export default CategoriesController;
 ```
+
+
+
 
 ```javascript
 import template from './categories.html';
