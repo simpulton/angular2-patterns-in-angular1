@@ -1,6 +1,8 @@
 # Create Lightweight Controllers by Binding to Models
 
-If our goal is to create lightweight controllers, how we do surface business logic from our services into our component?
+If our goal is to create lightweight controllers, how we do surface business logic from our services into our component? A simple technique for this is to bind directly our services so that we can expose them in our templates. 
+
+For instance, we have extracted out the logic around getting the currently selected category into the **CategoriesModel** service. Though the logic is extracted, we still need it available in our controller so that we can use it in a template filter. We can accomplish this by creating a 
 
 ```javascript
 class BookmarksController {
@@ -11,7 +13,7 @@ class BookmarksController {
       .then(bookmarks => this.bookmarks = bookmarks);
 
     this.getCurrentCategory = 
-      this.CategoriesModel.getCurrentCategory.bind(this.CategoriesModel);
+      this.CategoriesModel.getCurrentCategory.bind(this.CategoriesModel); // Lexical scope! :(
   }
 }
 
