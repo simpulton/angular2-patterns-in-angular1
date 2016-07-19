@@ -33,6 +33,8 @@ And now, let us look at the entire template for our category item component. We 
 </div>
 ```
 
+Let us expand our view just a bit by examining our component's relationship to its parent. In the parent component, we are adding our category item component to the DOM by way of an **ngRepeat** and passing in a **category** item as well as listening for the **selected** event and calling **onCategorySelected** on the parent component.
+
 ```html
 <ul class="nav nav-sidebar">
 	<li ng-repeat="category in categoriesListCtrl.categories">
@@ -43,6 +45,8 @@ And now, let us look at the entire template for our category item component. We 
 	</li>
 </ul>
 ```
+
+And in the parent controller, we can then determine what action we want to take with our selected component. Generally, this will involve further delegation by handing off processing to a service.
 
 ```javascript
 class CategoriesController {
