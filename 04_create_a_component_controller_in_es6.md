@@ -76,8 +76,7 @@ class CategoriesController {
 export default CategoriesController;
 ```
 
-
-
+Now that we have created our controller class, the only thing left to do is to wire it up. We will first import the controller and then add it to the component definition object. Because we are using a classical based approach, we will also define the **controllerAs** property to our configuration object.
 
 ```javascript
 import template from './categories.html';
@@ -92,3 +91,5 @@ const categoriesComponent = {
 
 export default categoriesComponent;
 ```
+
+The connection that I want to you to make here with is that we are approximating the **@Component** decorator in Angular 1 using a component configuration objection connect our controller, template and in the loosest sense of the word, our styles.
