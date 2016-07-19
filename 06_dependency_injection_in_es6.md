@@ -88,4 +88,4 @@ var CategoriesModel = (function () {
 }());
 ```
 
-For some people this is a "well... duh!" point to make but for a lot of JavaScript developers, orienting code around classes is a totally new experience.
+For some people this is a "well... duh!" point to make but for a lot of JavaScript developers, assembling code around classes is a totally new experience.
