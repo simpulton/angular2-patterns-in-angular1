@@ -2,6 +2,9 @@
 
 The atomic building block of an Angular 2 application is the component. 
 
+
+
+
 ```javascript
 import {Component} from '@angular/core';
 import {ItemDetailsComponent} from './item-details';
