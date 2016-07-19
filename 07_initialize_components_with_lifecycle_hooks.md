@@ -4,6 +4,8 @@ Components have an internal lifecycle that is managed by Angular as the componen
 
 There are quite a few practical reasons to use lifecycle hooks but the one I want to focus on here is the separation of construction from initialization. Constructors should contain no initialization logic as it can lead to some unpredictable behavior. A component's constructor can be called before its bindings have been initialized as they may depend on some asynchronous operation in its parent component. 
 
+
+
 ```javascript
 class CategoriesController {
   constructor(CategoriesModel) {
