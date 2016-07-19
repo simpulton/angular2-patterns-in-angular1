@@ -55,3 +55,5 @@ export default BookmarksController;
 ```
 
 And now, whenever a category is selected, we can call **reset** on our **BookmarksController** to update our bookmarks view. 
+
+Observables in Angular 2 are powerful because they are essentially a data collection that handles its own events to push out changes when the collection updates. This is a very limited explanation but in the context of this concept, I want to call out the events part. We can use the events piece aka the observer part of observable by implementing an event bus on Angular **$scope**.
