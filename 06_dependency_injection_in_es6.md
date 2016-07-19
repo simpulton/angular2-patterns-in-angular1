@@ -87,3 +87,5 @@ var CategoriesModel = (function () {
     return CategoriesModel;
 }());
 ```
+
+For some people this is a "well... duh!" point to make but for a lot of JavaScript developers, orienting code around classes is a totally new experience.
