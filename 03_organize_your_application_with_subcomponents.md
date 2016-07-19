@@ -35,7 +35,7 @@ Once we have created our **ItemDetailsComponent** subcomponent, we will import i
 <item-details *ngFor="let item of items" [item]="item"></item-details>
 ```
 
-Putting components front and center of your application and letting it drive the architecture is one of the single most important concepts in Angular 2 that we can apply to our Angular 1 applications. 
+Putting components front and center of your application and letting it drive the architecture is one of the single most important concepts in Angular 2 that we can apply to our Angular 1 applications. In the example below, the syntax is slightly different but the approach is almost identical. We have extracted out a category item component that is wrapped in the **CategoryItemModule** that we will use to inject into the **CategoriesModule**. In Angular 2, we do this at the component level via metadata but in Angular 1, we need to do this at the component level as a submodule dependency. 
 
 ```javascript
 import angular from 'angular';
@@ -51,6 +51,8 @@ const CategoriesModule = angular.module('categories', [
 export default CategoriesModule;
 ```
 
+And from there, we update the HTML of our parent component to reference our newly minted subcomponent.
+
 ```html
 <ul class="nav nav-sidebar">
 	<li ng-repeat="category in categoriesListCtrl.categories">
@@ -61,3 +63,5 @@ export default CategoriesModule;
 	</li>
 </ul>
 ```
+
+This approach results in a very well organized application with clearly defined boundaries around specific functionality. Another upside is that our templates becomes much smaller and significantly more declared as we are essentially defining our own DSL as we build the application.
