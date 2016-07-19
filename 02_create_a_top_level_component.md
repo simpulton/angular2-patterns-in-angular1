@@ -40,12 +40,11 @@ angular.module('app', [
 ;
 ```
 
+And then we can add our component to our **index.html** page and then try to figure out when we write **<app>Loading...</app>** or **<app>Loading...</app>**, which one is Angular 1 and which one is Angular 2.
+
 ```html
 <body ng-app="app" ng-strict-di ng-cloak>
-
-  <app>
-    Loading...
-  </app>
+  <app>Loading...</app>
 
   <script src="bundle.js"></script>
 </body>
