@@ -54,4 +54,4 @@ class BookmarksController {
 export default BookmarksController;
 ```
 
-And now, whenever a category is selected, we can call **reset** on our **BookmarksController** to reset our bookmarks view. 
+And now, whenever a category is selected, we can call **reset** on our **BookmarksController** to update our bookmarks view. 
