@@ -43,6 +43,7 @@ In our template, we are binding our form to the **boomkark** object that we pass
 
 What we need to do is find a way to give our form a brand new object that matches the object we want to edit so that we can change it at will without affecting things upstream. If we change our mind, we can just throw this object away and no one will be the wiser. So how do we create this object and more importantly, **when** do we create this object?
 
+This is where component lifecycle hooks saves the day yet again! Using the **$onChanges** hook, we can be notified every time an object we are binding to changes. And within that event hook, we can use **Object.assign** to create a copy of our **bookmark** object and assign it to **this.editedBookmark**.
 
 ```javascript
 class SaveController {
@@ -53,6 +54,8 @@ class SaveController {
 
 export default SaveController;
 ```
+
+And then we update our form to bind to **saveBookmarkCtrl.editedBookmark** which effectively isolates our state mutations to our component.
 
 ```html
 <div class="save-bookmark">
