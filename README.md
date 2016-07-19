@@ -1,5 +1,8 @@
 # The Ethos of Angular 2
 
+> ####Ethos
+> the distinctive character, spirit, and attitudes of a people, culture, era, etc
+
 It was an alarming experience for most of us the first time we saw Angular 2. Angular 2 did not look anything like the Angular 1 that we were used to writing. For many of us, this meant going back to the drawing board and learning Angular all over again. Then something strange started to happen. The way that we approached Angular 1 applications began to change. Tiny subtle changes. We began to prefer components as the primary mechanism for composing our apps. We started to use ES6 to write our Angular 1 applications. We began to refactor our controllers to be as thin as possible and in some cases, our components didn't even **need** controllers!
 
 ![](http://onehungrymind-45fd.kxcdn.com/books/angular2-breakdown.png)
