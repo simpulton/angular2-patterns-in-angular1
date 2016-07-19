@@ -10,7 +10,7 @@ import { AppComponent, environment } from './app/';
 bootstrap(AppComponent, [ROUTER_PROVIDERS]);
 ```
 
-In order for our **AppComponent** to to be instantiated in our application, we need to add it to our **index.html** page via its selector. 
+In order for our **AppComponent** to to be instantiated in our application, we need to add it to our **index.html** page via its selector which in this case is **app**.  
 
 ```html
 <body>
