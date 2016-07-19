@@ -55,7 +55,7 @@ class SaveController {
 export default SaveController;
 ```
 
-And then we update our form to bind to **saveBookmarkCtrl.editedBookmark** which effectively isolates our state mutations to our component.
+And then we update our form to bind to **saveBookmarkCtrl.editedBookmark** which effectively isolates our state mutations to the component.
 
 ```html
 <div class="save-bookmark">
