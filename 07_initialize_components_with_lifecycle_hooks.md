@@ -24,7 +24,6 @@ When a lifecycle event happens to a component, Angular implicitly calls a method
 
 > You can read about all the available lifecycle hooks here https://docs.angularjs.org/guide/component
 
-
 ```javascript
 class CategoriesController {
   constructor(CategoriesModel) {
