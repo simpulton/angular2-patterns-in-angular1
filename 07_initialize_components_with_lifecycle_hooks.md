@@ -22,6 +22,9 @@ export default CategoriesController;
 
 When a lifecycle event happens to a component, Angular implicitly calls a method on that component that we can use. Because we want to know when a component is initialized, we can do that by adding an **$onInit** method to our component which will get called on initialization. From there, we just move our call to **CategoriesModel.getCategories()** into our new function block.
 
+> You can read about all the available lifecycle hooks here https://docs.angularjs.org/guide/component
+
+
 ```javascript
 class CategoriesController {
   constructor(CategoriesModel) {
