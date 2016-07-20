@@ -35,6 +35,7 @@ class CategoriesModel {
 
 export default CategoriesModel;
 ```
+
 And we can see a variation of this in Angular 2 which still bears a striking resemblance to our Angular 1 version. The only difference is that in the code below, because we are using TypeScript, we are using field assignment to initialize **categories** and an access modifier to set it to **private**.
 
 ```javascript
