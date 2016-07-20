@@ -23,7 +23,7 @@ class CategoriesModel {
 export default CategoriesModel;
 ```
 
-Using a class based approach, we simply cannot reference an injected dependency outside of the constructor. In the **getCategories** method above, there is no reference to **$q** because it is only scoped to the constructor function. We can make it available by assigning it to a local  member within the constructor in the form of **this.$q = $q**.
+Using a class based approach, we simply cannot reference an injected dependency outside of the constructor. In the **getCategories** method above, there is zero knowledge of **$q** because it is only scoped to the constructor function. We can make it available by assigning it to a local  member within the constructor in the form of **this.$q = $q**.
 
 > We are using **'ngInject';** to instruct **ngAnnotate** to generate strict dependency injection syntax for us.
 
