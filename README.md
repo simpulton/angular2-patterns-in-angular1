@@ -1,9 +1,4 @@
 # Angular 1 in an Angular 2 Style
-It was an alarming experience for most Angular 1 developers the first time they saw Angular 2. In fact, pretty much **everything** changed. We were faced with learning a new language, new syntax, new tooling, etc and it was overwhelming. The 5 minute quick start was more like a 25 minute quick start that included a 20 minute scenic tour into a ton of new stuff seemingly unrelated to Angular.
-
-As I began to learn Angular 2, a funny thing happened. My entire worldview on Angular 1 began to shift towards a cleaner, more elegant approach as I began to apply the concepts that were self evident in Angular 2. I just wanted to write Angular 1 apps like an Angular 2 application 
-
-# Angular 1 in an Angular 2 Style
 It was an alarming experience for most Angular 1 developers the first time they saw Angular 2. In fact, pretty much **everything** changed. We were faced with learning a new language, new syntax, new tooling, etc. and it was overwhelming. The 5-minute quick start was more like a 25-minute quick start that included a 20-minute scenic tour into a ton of new stuff seemingly unrelated to Angular.
 
 As I began to learn Angular 2, a funny thing happened. My entire worldview on Angular 1 began to shift towards a cleaner, more elegant approach as I began to apply the concepts that were self-evident in Angular 2. I just wanted to write Angular 1 apps like an Angular 2 application because it felt "right."
