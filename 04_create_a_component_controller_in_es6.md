@@ -1,6 +1,6 @@
 # Create a Component Controller in ES6
 
-The simplest version of an Angular 2 component is just an HTML template and a selector that allows us to attach our component to the DOM. As an organizational mechanism, this is a great approach, but eventually, we will need to provide some presentational logic to some of our components. Adding presentational logic is relatively easy to do in Angular 2 because all of our components require an ES6 class to decorate. In fact, our ES6 class may hold nothing at all, but it is always there.
+The simplest version of an Angular 2 component is just an HTML template and a selector that allows us to attach our component to the DOM. As an organizational mechanism, this is a great approach, but eventually, we will need to provide presentational logic to some of our components. Adding presentational logic is relatively easy to do in Angular 2 because all of our components require an ES6 class to decorate. In fact, our ES6 class may hold nothing at all, but it is always there.
 
 ```javascript
 import {Component, OnInit} from '@angular/core';
