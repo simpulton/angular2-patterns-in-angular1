@@ -4,7 +4,7 @@ The atomic building block of an Angular 2 application is the component. We start
 
 ![](http://onehungrymind-45fd.kxcdn.com/books/angular2-subcomponents.png)
 
-In our hypothetical Angular 2 application below, we have an `ItemsComponent` that contains all of the items. We could just define our template for a single item and then iterate over our collection of items and lay them out with **ngFor**. Repeating over a block of HTML is a viable approach and probably where I would start, but the lack of encapsulation means that I can never use the template I built to display the item's details anywhere else. The next step is to extract the details template and related functionality into a subcomponent.
+In our hypothetical Angular 2 application below, we have an **ItemsComponent** that contains all of the items. We could just define our template for a single item and then iterate over our collection of items and lay them out with **ngFor**. Repeating over a block of HTML is a viable approach and probably where I would start, but the lack of encapsulation means that I can never use the template I built to display the item's details anywhere else. The next step is to extract the details template and related functionality into a subcomponent.
 
 ```javascript
 import {Component} from '@angular/core';
