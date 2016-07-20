@@ -5,8 +5,6 @@ As I began to learn Angular 2, a funny thing happened. My entire worldview on An
 
 ## The Ethos of Angular 2
 
-
-
 ![](http://onehungrymind-45fd.kxcdn.com/books/angular2-breakdown.png)
 
 Eventually, I started to make the distinction between "the architecture" and "the implementation" when talking about Angular 2. I did not have to wait for the right business opportunity or buy-in arrived for me to start benefiting from the architecture or *ethos* of Angular 2.
