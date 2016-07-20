@@ -1,6 +1,6 @@
 # Create a Top-Level Component
 
-The entry point to an Angular 2 application is a top level component that we use to attach all of our other components onto. In the code below, we are bootstrapping our Angular 2 application using the **bootstrap** method and passing in **AppComponent** as our top level component. 
+The entry point to an Angular 2 application is a top level component that we use as a container for all of our other components. In the code below, we are bootstrapping our Angular 2 application using the **bootstrap** method and passing in **AppComponent** as our top level component. 
 
 ```javascript
 import { bootstrap } from '@angular/platform-browser-dynamic';
