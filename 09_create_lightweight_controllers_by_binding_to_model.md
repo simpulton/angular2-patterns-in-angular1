@@ -3,7 +3,7 @@
 If our goal is to build lightweight controllers, how we do surface business logic from our services into our component? A simple technique for this is to bind directly to our services so that we can expose them in our templates. 
 
 For instance, we have extracted out the logic around getting the currently selected category into the **CategoriesModel** service. Though the logic is extracted, we still need it available in our controller so that we can use it in a template filter. We can accomplish this by creating a **getCurrentCategory** property on our controller and assigning a reference to **this.CategoriesModel.getCurrentCategory**.
-
+a
 ```javascript
 class BookmarksController {
   //...
