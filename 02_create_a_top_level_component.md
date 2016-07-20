@@ -1,6 +1,6 @@
-# Create a Top Level Component
+# Create a Top-Level Component
 
-The entry point to an Angular 2 application is a top level component that we use to attach all of our other components onto. In the code below, we are bootstrapping our Angular 2 application using the **boostrap** method and passing in **AppComponent** as our top level component. 
+The entry point to an Angular 2 application is a top level component that we use to attach all of our other components onto. In the code below, we are bootstrapping our Angular 2 application using the **bootstrap** method and passing in **AppComponent** as our top level component. 
 
 ```javascript
 import { bootstrap } from '@angular/platform-browser-dynamic';
@@ -10,7 +10,7 @@ import { AppComponent, environment } from './app/';
 bootstrap(AppComponent, [ROUTER_PROVIDERS]);
 ```
 
-In order for our **AppComponent** to to be instantiated in our application, we need to add it to our **index.html** page via its selector which in this case is **app**.  
+For our **AppComponent** to be instantiated in our application, we need to add it to our **index.html** page via its selector which in this case is **app**.  
 
 ```html
 <body>
@@ -24,7 +24,7 @@ In order for our **AppComponent** to to be instantiated in our application, we n
 </body>
 ```
 
-We can approximate this same pattern by first creating an **app** module that we bootstrap with with **ng-app**. More importantly, we keep all of our Angular code wrapped in a single, top level **app** component which we have created using **.component('app', appComponent)**. 
+We can approximate this same pattern by first creating an **app** module that we bootstrap with **ng-app**. More importantly, we keep all of our Angular code wrapped in a single, top-level **app** component which we have created using **.component('app', appComponent)**. 
 
 ```javascript
 import angular from 'angular';
@@ -40,7 +40,7 @@ angular.module('app', [
 ;
 ```
 
-And then we can add our component to our **index.html** page and then try to figure out when we write **<app>Loading...</app>** or **<app>Loading...</app>**, which one is Angular 1 and which one is Angular 2.
+And then we can add our component to our **index.html** page and then try to figure out when we write `<app>Loading...</app>` or `<app>Loading...</app>`, which one is Angular 1 and which one is Angular 2.
 
 ```html
 <body ng-app="app" ng-strict-di ng-cloak>
