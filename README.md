@@ -12,13 +12,13 @@ Eventually, I found it necessary to make the distinction between "the architectu
 > ####Ethos
 > the distinctive character, spirit, and attitudes of a people, culture, era, etc
 
-The best practices that emerged from Angular 1 had been made the default in Angular 2. Significant portions of the framework were left on the cutting floor as the Angular team decided for letting vanilla JavaScript and HTML do the hard work. Angular 2 has jumped leap years ahead in terms of how we organize our applications and equally important is how we communicate between those pieces.
+The best practices that emerged from Angular 1 had been made the default in Angular 2. Significant portions of the framework were left on the cutting floor as the Angular team decided for letting vanilla JavaScript and HTML do the hard work. Angular 2 has jumped leap years ahead concerning how we organize our applications and equally important is how we communicate between those pieces.
 
 ## The Goal
 
-And the best part of this brave new world is that a lot of the architectural principles have been back-ported into Angular 1, and we can start using them right now. We are going to work through a series of easy to follow, practical techniques that you can apply to your existing Angular 1 applications in an iterative and pragmatic manner.
+The best part of this brave new world is that a lot of the architectural principles have been back-ported into Angular 1, and we can start using them right now. We are going to work through a series of easy to follow, practical techniques that you can apply to your existing Angular 1 applications in an iterative and pragmatic manner.
 
-Writing an Angular 1 application in an Angular 2 style invariably gets us **a lot** further down the road with the migration talk but we should not limit ourselves to just that context. Writing an Angular 1 application in an Angular 2 means that we are writing better Angular 1 apps. **Much better**.
+Writing an Angular 1 application in an Angular 2 style invariably gets us **a lot** further down the road in terms of migration but we should not limit ourselves to just that context. Writing an Angular 1 application in an Angular 2 means that we are writing better Angular 1 apps. **Much better**.
 
 ## The Code
 
