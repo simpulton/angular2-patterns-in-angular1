@@ -1,6 +1,6 @@
 # Dependency Injection in ES6
 
-Dependency injection in an Angular application using ES6 happens at the constructor level as we pass our dependencies in as parameters. This comes with a slight nuance that could trip up developers who are unfamiliar with working in a classical language.
+Dependency injection in an Angular application using ES6 happens at the constructor level as we pass our dependencies in as parameters. This approach to dependency injection comes with a slight nuance that could trip up developers who are unfamiliar with working in a classical language.
 
 In the example below, we are injecting the **$q** service which makes it available for us to use within the constructor. Naturally, we will need to use the **$q** inside other methods within our class. Historically, in Angular 1, when we injected a dependency as a parameter to our controller or service, it was entirely available for use. 
 
@@ -59,7 +59,7 @@ class CategoriesModel {
 }
 ```
 
-This generates the following ES5 output. Notice that **$q** is treated as just an ordinary parameter.
+TypeScript generates the following ES5 output. Notice that **$q** is treated as just an ordinary parameter.
 
 ```javascript
 var CategoriesModel = (function () {
@@ -69,7 +69,7 @@ var CategoriesModel = (function () {
 }());
 ```
 
-TypeScript allows us to do automatic consructor assignment which means that whenever we add an access modifier to the parameter, it is implied that that parameter should become a member of the class. Therefore, TypeScript will automatically assign it as a local member within the constructor.
+TypeScript allows us to do automatic constructor assignment which means that whenever we add an access modifier to the parameter, it is implied that that parameter should become a member of the class. Therefore, TypeScript will automatically assign it to a local member within the constructor.
 
 ```javascript
 class CategoriesModel {
@@ -88,4 +88,4 @@ var CategoriesModel = (function () {
 }());
 ```
 
-For some people this is a "well... duh!" point to make but for a lot of JavaScript developers, assembling code around classes is a totally new experience.
+For some people this is a "well... duh!" point to make but for a lot of JavaScript developers, assembling code around classes is an entirely new experience.
