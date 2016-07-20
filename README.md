@@ -7,12 +7,12 @@ As I began to learn Angular 2, a funny thing happened. My entire worldview on An
 
 ![](http://onehungrymind-45fd.kxcdn.com/books/angular2-breakdown.png)
 
-Eventually, I started to make the distinction between "the architecture" and "the implementation" when talking about Angular 2. I did not have to wait for the right business opportunity or buy-in arrived for me to start benefiting from the architecture or *ethos* of Angular 2.
+Eventually, I found it necessary to make the distinction between "the architecture" and "the implementation" of Angular 2 when talking about Angular in general. I could immediately benefit from the *ethos* of Angular 2 without having to secure the right business opportunity or even executive buy-in. I have had a lot of earnest conversations with teams who were eager to start using Angular 2 but just could not see a realistic way forward. My answer is always the same. **Start writing Angular 2 immediately even if it is only in your Angular 1 applications.**
 
 > ####Ethos
 > the distinctive character, spirit, and attitudes of a people, culture, era, etc
 
-The best practices that emerged from Angular 1 had been made the default in Angular 2. Significant portions of the framework were left on the cutting floor as the Angular team decided for letting vanilla JavaScript and HTML do the hard work. We had twice the power with half the framework.
+The best practices that emerged from Angular 1 had been made the default in Angular 2. Significant portions of the framework were left on the cutting floor as the Angular team decided for letting vanilla JavaScript and HTML do the hard work. Angular 2 has jumped leap years ahead in terms of how we organize our applications and equally important is how we communicate between those pieces.
 
 ## The Goal
 
