@@ -1,6 +1,6 @@
 # Organize Your Application with Subcomponents
 
-The atomic building block of an Angular 2 application is the component. We start with the top level component and then continue to divide our applications into smaller units of functionality as we build out subcomponents. The goal is to end up with many fine-grained subcomponents that focus on a single task.
+The atomic building block of an Angular 2 application is the component. We start with the top level component and then continue to divide our applications into smaller units of functionality as we build out subcomponents. The goal is to end up with many fine-grained subcomponents that each focus on a single task.
 
 ![](http://onehungrymind-45fd.kxcdn.com/books/angular2-subcomponents.png)
 

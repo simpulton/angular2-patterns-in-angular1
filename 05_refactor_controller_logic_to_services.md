@@ -1,8 +1,8 @@
 # Refactor Controller Logic to Services
 
-An Angular component controller has two primary functions; it is responsible for consuming just enough data to satisfy the view that it controls and communicate user events back to a service for processing. With this in mind, we should extract any logic that does not directly relate to the presentation of the view into a service. A common theme in Angular 2 is that everything is "just a class" and we will see how beneficial that is when we start to extract logic into services.
+An Angular component controller has two primary functions; 1) it is responsible for consuming just enough data to satisfy the view that it controls and 2) communicate user events back to a service for processing. With this in mind, we should extract any logic that does not directly relate to the presentation of the view into a service. A common theme in Angular 2 is that everything is "just a class" and we will see how beneficial that is when we start to extract logic into services.
 
-In the controller below, we have a collection of categories that we should refactor to a service. Because we are using ES6 classes, the structural differences between a controller and a service are almost non-existent. 
+In the controller below we have a collection of categories that we should refactor to a service. The structural differences between a controller and a service are almost non-existent due to our ES6 classes. 
 
 ```javascript
 class CategoriesController {
@@ -19,7 +19,7 @@ class CategoriesController {
 export default CategoriesController;
 ```
 
-To prove this, we can just paste the contents of the **CategoriesController** into a new file and rename the class to **CategoriesModel**. Done. 
+We can prove this by pasting the contents of the **CategoriesController** into a new file and renaming the class to **CategoriesModel**. Done. 
 
 ```javascript
 class CategoriesModel {
