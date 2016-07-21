@@ -20,7 +20,7 @@ class CategoriesController {
 export default CategoriesController;
 ```
 
-When a lifecycle event happens to a component, Angular implicitly calls a method on that component that we can use. Because we want to know when a component is initialized, we can do that by adding an **$onInit** method to our component which will get called on initialization. From there, we just move our call to **CategoriesModel.getCategories()** into our new function block.
+When a lifecycle event happens to a component, Angular implicitly calls a method on that component that we can use. We know when a component is initialized by adding an **$onInit** method to our component which is called on initialization. From there, we just move our call from **CategoriesModel.getCategories()** into our new function block.
 
 > You can read about all the available lifecycle hooks here https://docs.angularjs.org/guide/component
 
@@ -41,7 +41,7 @@ class CategoriesController {
 export default CategoriesController;
 ```
 
-Lifecycle hooks work pretty much the same in Angular 2 with a slight change in the API to **ngOnInit**. We can optionally implement the **OnInit** interface which is not required but considered best practice.
+Lifecycle hooks work pretty much the same in Angular 2 with a slight change in the API to **ngOnInit**. We can optionally implement the **OnInit** interface. This is not required, but it is considered a best practice.
 
 ```javascript
 export class HomeComponent implements OnInit {

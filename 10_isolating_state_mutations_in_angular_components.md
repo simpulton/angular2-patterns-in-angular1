@@ -1,8 +1,8 @@
 # Isolating State Mutations in Angular Components
 
-If we are moving to an immutable, unidirectional data flow then how do we handle mutable operations like forms? Mutable state in itself is not a bad thing as long as we can isolate it. It is shared mutable state causes all manner of evil to be called down upon our application. When it comes to forms in Angular, the solution to this problem is so simple; it almost feels like sleight of hand.
+How do we handle mutable operations like form with an immutable, unidirectional data flow? Mutable state in itself is not a bad thing as long as we can isolate it. It is shared mutable state that causes all manner of evil to be called down upon our application. Angular's solution to this problem is so simple. It feels like sleight of hand.
 
-Let us start with an example that not only has mutable state but it is shared between components and then work to solve the issue at hand. In our component below, we are sending in a **bookmark** object for editing. When we are done, we can either **save** our changes or **cancel** our changes.
+Let us start with an example that not only has mutable state but it is shared between components, and then we'll work to solve the issue at hand. In our component below we're sending in a **bookmark** object for editing. When we are done we can either **save** our changes or **cancel** our changes.
 
 ```javascript
 import template from './save-bookmark.html';
@@ -22,7 +22,7 @@ let saveBookmarkComponent = {
 export default saveBookmarkComponent;
 ```
 
-In our template, we are binding our form to the **bookmark** object that we passed in via our **bindings**. What is going to happen the moment we start to edit our **bookmark** object? Because we are passing in a reference to an object that exists outside of our component, when we mutate our object, it will change that object on the parent as well. Well, great! So how do we back out of this if we change our mind? We have already changed the object. 
+Now let's address the template. We are binding our template form to the **bookmark** object that we passed in via our **bindings**. What will happen the moment we start to edit our **bookmark** object? We are passing in a reference to an object that exists outside of our component, so when we mutate our object it will change that object on the parent as well. Well, great! So how do we back out of this if we change our mind? We have already changed the object. 
 
 ```html
 <div class="save-bookmark">
@@ -41,9 +41,9 @@ In our template, we are binding our form to the **bookmark** object that we pass
 </div>
 ```
 
-What we need to do is find a way to give our form a brand new object that matches the object we want to edit so that we can change it at will without affecting things upstream. If we change our mind, we can just throw this object away, and no one will be the wiser. So how do we create this object and more importantly, **when** do we create this object?
+What we need to do is find a way to give our form a brand new object that matches the object we want to edit so that we can change it at will without affecting things upstream. We can just throw this object away later and no one will be the wiser. So how do we create this object and more importantly, **when** do we create this object?
 
-This challenge is where component lifecycle hooks save the day yet again! Using the **$onChanges** hook, we can be notified every time an object we are binding to changes. And within that event hook, we can use **Object.assign** to create a copy of our **bookmark** object and assign it to **this.editedBookmark**.
+This challenge is where component lifecycle hooks save the day yet again! We can use the **$onChanges** hook to be notified every time an object changes. And within that event hook, we can use **Object.assign** to create a copy of our **bookmark** object and assign it to **this.editedBookmark**.
 
 ```javascript
 class SaveController {
@@ -55,7 +55,7 @@ class SaveController {
 export default SaveController;
 ```
 
-And then we update our form to bind to **saveBookmarkCtrl.editedBookmark** which effectively isolates our state mutations to the component.
+And then we update our form to bind to **saveBookmarkCtrl.editedBookmark**, effectively isolating our state mutations to the component.
 
 ```html
 <div class="save-bookmark">
